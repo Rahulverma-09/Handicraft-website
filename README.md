@@ -1,2 +1,2 @@
-# Handicarft-website
+# Handicraft-website
 Handicraft Website For Business 
