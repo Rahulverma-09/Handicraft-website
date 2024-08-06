@@ -69,7 +69,6 @@
 
           .navbar {
             width: 100%;
-            height: 84px;
             background-color: #F8F8FF;
             overflow: auto;
             opacity: 98%;
@@ -97,6 +96,7 @@
               display: block;
             }
           }
+          
         </style>
   </head>
   
@@ -163,133 +163,24 @@
         </ul>
       </div>
     </nav>
-    
   <!-- End of Navigation Bar Designing -->
     
   <!-- ### Main Body Designing ### -->
-    
     <h1 class=".container-fluid container text-center">Hi and a huge welcome from Rahul Handicraft! We're thrilled to have you with us.
       Get ready for a memorable time and a great experience. We're just a message away if you want anything.
     </h1>
 
-  <!-- Hold Main Content(Images) --> 
-  <div class="p-3 mb-2 bg-light-subtle text-light-emphasis">  
-    <div class="row row-cols-1 row-cols-md-3 g-4 .container-fluid" style="margin-bottom: 40px;
-      background-color: white">
-      <div class="col">
-        <div class="card h-100" style="margin-left: 15px">
-          <img src="static/LSG.jpg" class="card-img-top .img-fluid" alt="item">
-          <div class="card-body">
-            <h5 class="card-title">LSG Set</h5>
-            <p class="card-text">This is a Laxmi Sarswati Ganesh Diya Stand known as LSG Set.</p>
-            <div class="card-text">
-              <p class="card-text"><b>Metal</b> - Aluminium<span style="text-align: right; margin-left: 125px"><b>Weight</b> - 300gm</span></p>
-              <p class="card-text"><b>Polish</b> - Gold<span style="text-align: right; margin-left: 166px"><b>Price</b> - Rs.250/-</span></p>
-            </div>
-          </div>
-          <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
-            border-top-right-radius: 0px;border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
-            <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px;">Get Now</span>  
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="static/GaayBachhda.jpeg" class="card-img-top .img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gau Bachda</h5>
-            <p class="card-text">Elegant statue of a cow with their calf with a wonderful metal work.</p>
-            <div class="card-text">
-              <p class="card-text"><b>Metal</b> - Aluminium<span style="text-align: right; margin-left: 135px"><b>Weight</b> - 650gm</span></p>
-              <p class="card-text"><b>Polish</b> - Gold<span style="text-align: right; margin-left: 176px"><b>Price</b> - Rs.400/-</span></p>
-            </div>
-          </div>
-          <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
-            border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
-            <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100" style="margin-right: 15px">
-          <img src="static/RK_Bell.jpg" class="card-img-top .img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">RK Ghanti</h5>
-            <p class="card-text">This is a beautiful RadhaKrishna Statue with Bells.</p>
-            <div class="card-text">
-              <p class="card-text"><b>Metal</b> - Aluminium<span style="text-align: right; margin-left: 125px"><b>Weight</b> - 150gm</span></p>
-              <p class="card-text"><b>Polish</b> - Gold<span style="text-align: right; margin-left: 166px"><b>Price</b> - Rs.160/-</span></p>
-            </div>
-          </div>
-          <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
-            border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
-            <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
-          </div>
-        </div>
-      </div>
+  <!-- Contains main body of the website -->
+    <div>
+      {% include 'items.html' %}
     </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4 .container-fluid" style="margin-bottom: 40px;
-      background-color: white">
-      <div class="col">
-        <div class="card h-100" style="margin-left: 15px">
-          <img src="static/candlestand.jpeg" class="card-img-top .img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Candle Stand</h5>
-            <p class="card-text">This is a glorious candle light stand in the shape of coconut tree with a glass candle holder.</p>
-            <div class="card-text">
-              <p class="card-text"><b>Metal</b> - Aluminium<span style="text-align: right; margin-left: 125px"><b>Weight</b> - 370gm</span></p>
-              <p class="card-text"><b>Polish</b> - Silver<span style="text-align: right; margin-left: 166px"><b>Price</b> - Rs.450/-</span></p>
-            </div>
-          </div>
-          <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
-            border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
-            <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="static/krishna.jpg" class="card-img-top .img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"">Krishna Ped</h5>
-            <p class="card-text">This is a beautiful krishna tree with baby calf.</p>
-            <div class="card-text">
-              <p class="card-text"><b>Metal</b> - Aluminium<span style="text-align: right; margin-left: 125px"><b>Weight</b> - 130gm</span></p>
-              <p class="card-text"><b>Polish</b> - Gold<span style="text-align: right; margin-left: 166px"><b>Price</b> - Rs.140/-</span></p>
-            </div>
-          </div>
-          <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
-            border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
-            <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100" style="margin-right: 15px">
-          <img src="static/turtleplate.jpg" class="card-img-top .img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Turtle Plate</h5>
-            <p class="card-text">This is a wonderful item. A turtle with a glass plate.</p>
-            <div class="card-text">
-              <p class="card-text"><b>Metal</b> - Aluminium<span style="text-align: right; margin-left: 125px"><b>Weight</b> - 200gm</span></p>
-              <p class="card-text"><b>Polish</b> - Silver<span style="text-align: right; margin-left: 166px"><b>Price</b> - Rs.270/-</span></p>
-            </div>
-          </div>
-          <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
-            <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-   <!-- End of Main Content -->
+    <!-- end of main body -->
     
   <center>
     <button class=".container-fluid btn btn-primary btn-md">Contact Us</button>
   </center>
 
    <!-- Page Footer Designing -->
-
     <div class="container">
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -302,7 +193,6 @@
         <p class="text-center text-body-secondary">&copy; 2024 Handicraft, Inc</p>
       </footer>
     </div>
-
     <!-- End of Page Footer Designing -->    
 
   </body>
