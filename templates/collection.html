@@ -1,0 +1,269 @@
+<!-- Hold Main Content(Images) --> 
+
+<div class="p-3 mb-2 bg-light-subtle text-light-emphasis">  
+  <div class="row row-cols-1 row-cols-md-3 g-4 .container-fluid" style="margin-bottom: 40px;
+    background-color: white">
+    <div class="col">
+      <div class="card h-100" style="margin-left: 15px">
+        <img src="static/LSG.jpg" class="card-img-top .img-fluid" alt="item">
+        <div class="card-body">
+          <h5 class="card-title">
+            {% for data in info %}
+              {% if data['Item_id'] == 1 %}
+                {{data['Item_name']}}
+              {% endif %}
+            {% endfor %}        
+          </h5>
+          <p class="card-text">This is a Laxmi Sarswati Ganesh Diya Stand known as LSG Set.</p>
+          <div class="card-text">
+            <p class="card-text"><b>Metal - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 1 %}
+                  {{data['Metal_name']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 125px"><b>Weight - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 1 %}
+                  {{data['Weight']}}
+                {% endif %}
+              {% endfor %}</span></p>
+            <p class="card-text"><b>Polish - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 1 %}
+                  {{data['Polish']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 166px"><b>Price(Rs) - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 1 %}
+                  {{data['Price']}}
+                {% endif %}
+              {% endfor %}</span></p>
+          </div>
+        </div>
+        <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
+          border-top-right-radius: 0px;border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+          <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px;">Get Now</span>  
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="static/GaayBachhda.jpeg" class="card-img-top .img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            {% for data in info %}
+              {% if data['Item_id'] == 2 %}
+                {{data['Item_name']}}
+              {% endif %}
+            {% endfor %} 
+          </h5>
+          <p class="card-text">Elegant statue of a cow with their calf with a wonderful metal work.</p>
+          <div class="card-text">
+            <p class="card-text"><b>Metal - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 2 %}
+                  {{data['Metal_name']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 135px"><b>Weight - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 2 %}
+                  {{data['Weight']}}
+                {% endif %}
+              {% endfor %}</span></p>
+            <p class="card-text"><b>Polish - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 2 %}
+                  {{data['Polish']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 176px"><b>Price(Rs) - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 2 %}
+                  {{data['Price']}}
+                {% endif %}
+              {% endfor %}</span></p>
+          </div>
+        </div>
+        <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
+          border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
+          <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" style="margin-right: 15px">
+        <img src="static/RK_Bell.jpg" class="card-img-top .img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            {% for data in info %}
+              {% if data['Item_id'] == 3 %}
+                {{data['Item_name']}}
+              {% endif %}
+            {% endfor %} 
+          </h5>
+          <p class="card-text">This is a beautiful RadhaKrishna Statue with Bells.</p>
+          <div class="card-text">
+            <p class="card-text"><b>Metal - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 3 %}
+                  {{data['Metal_name']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 125px"><b>Weight - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 3 %}
+                  {{data['Weight']}}
+                {% endif %}
+              {% endfor %}</span></p>
+            <p class="card-text"><b>Polish - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 3 %}
+                  {{data['Polish']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 166px"><b>Price(Rs) - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 3 %}
+                  {{data['Price']}}
+                {% endif %}
+              {% endfor %}</span></p>
+          </div>
+        </div>
+        <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
+          border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
+          <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 .container-fluid" style="margin-bottom: 40px;
+    background-color: white">
+    <div class="col">
+      <div class="card h-100" style="margin-left: 15px">
+        <img src="static/candlestand.jpeg" class="card-img-top .img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            {% for data in info %}
+              {% if data['Item_id'] == 4 %}
+                {{data['Item_name']}}
+              {% endif %}
+            {% endfor %} 
+          </h5>
+          <p class="card-text">This is a glorious candle light stand in the shape of coconut tree with a glass candle holder.</p>
+          <div class="card-text">
+            <p class="card-text"><b>Metal - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 4 %}
+                  {{data['Metal_name']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 125px"><b>Weight - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 4 %}
+                  {{data['Weight']}}
+                {% endif %}
+              {% endfor %}</span></p>
+            <p class="card-text"><b>Polish - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 4 %}
+                  {{data['Polish']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 166px"><b>Price(Rs) - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 4 %}
+                  {{data['Price']}}
+                {% endif %}
+              {% endfor %}</span></p>
+          </div>
+        </div>
+        <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
+          border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
+          <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="static/krishna.jpg" class="card-img-top .img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            {% for data in info %}
+              {% if data['Item_id'] == 5 %}
+                {{data['Item_name']}}
+              {% endif %}
+            {% endfor %} 
+          </h5>
+          <p class="card-text">This is a beautiful krishna tree with baby calf.</p>
+          <div class="card-text">
+            <p class="card-text"><b>Metal - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 5 %}
+                  {{data['Metal_name']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 125px"><b>Weight - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 5 %}
+                  {{data['Weight']}}
+                {% endif %}
+              {% endfor %}</span></p>
+            <p class="card-text"><b>Polish - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 5 %}
+                  {{data['Polish']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 166px"><b>Price(Rs) - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 5 %}
+                  {{data['Price']}}
+                {% endif %}
+              {% endfor %}</span></p>
+          </div>
+        </div>
+        <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px;
+          border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
+          <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" style="margin-right: 15px">
+        <img src="static/turtleplate.jpg" class="card-img-top .img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            {% for data in info %}
+              {% if data['Item_id'] == 6 %}
+                {{data['Item_name']}}
+              {% endif %}
+            {% endfor %} 
+          </h5>
+          <p class="card-text">This is a wonderful item. A turtle with a glass plate.</p>
+          <div class="card-text">
+            <p class="card-text"><b>Metal - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 6 %}
+                  {{data['Metal_name']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 125px"><b>Weight - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 6 %}
+                  {{data['Weight']}}
+                {% endif %}
+              {% endfor %}</span></p>
+            <p class="card-text"><b>Polish - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 6 %}
+                  {{data['Polish']}}
+                {% endif %}
+              {% endfor %}<span style="text-align: right; margin-left: 166px"><b>Price(Rs) - </b>
+              {% for data in info %}
+                {% if data['Item_id'] == 6 %}
+                  {{data['Price']}}
+                {% endif %}
+              {% endfor %}</span></p>
+          </div>
+        </div>
+        <div class="btn btn-outline-primary" onclick="location.href='https://www.google.com'" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
+          <img src="static/cart4.svg" width="25" height="27" style="justify-content: center; margin-bottom: 7.5px"><span style="justify-content: center; margin-left: 3.5px; font-size: 17.5px">Get Now</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- End of Main Content -->
