@@ -10,16 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
         <style>
-          
-          h1 {
-            font-family: "Roboto"; 
-            text-align: "center";
-            background-color: DodgerBlue;
-            font-size: 25px;
-            margin-top: 32px;
-            margin-bottom: 32px;
-          }
-
           p{
             font-size: 15px;
           }
@@ -83,7 +73,7 @@
           }
 
           /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 768px) {
             .header a {
               float: none;
               display: block;
@@ -93,13 +83,17 @@
               float: none;
             }
           }
+          .container ul li{
+            padding: 28px;
+          }
         </style>
   </head>
   
-  <body>
+  <body style="background-color: white">
   <!-- Navigation Bar Designing -->
-    <div class="header shadow-sm">
-     <span style="font-family: forte; font-size: 38px; margin-left: 20px;">Handicraft</span>
+    <div class="header shadow-sm fixed-top bg-white">
+      <img src="static/1724665238219.png" style="width: 45px; height: 35px; margin-left: 5px; margin-top: -19px">
+       <span style="font-family: Bahnschrift SemiLight; font-size: 35.5px; margin-left: 5.5px; color: #2F4F4F;               opacity: 92%">Store</span>
       <div class="header-right">
         <a href="/">Home</a>
         <a class="active" href="/items">Items</a>
@@ -107,37 +101,27 @@
         <a href="/about">About</a>
       </div>
     </div> 
+    <div style="height: 80px"></div>
   <!-- End of Navigation Bar Designing -->
     
-  <!-- ### Main Body Designing ### -->
-    <h1 class=".container-fluid container text-center">Hi and a huge welcome from Rahul Handicraft! We're thrilled to have you with us.
-      Get ready for a memorable time and a great experience. We're just a message away if you want anything.
-    </h1>
-
   <!-- Contains main body of the website -->
     <div>
       {% include 'collection.html' %}
     </div>
-    <!-- end of main body -->
-    
-  <center>
-    <button class=".container-fluid btn btn-primary btn-md">Contact Us</button>
-  </center>
+  <!-- end of main body -->
 
-   <!-- Page Footer Designing -->
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-        </ul>
-        <p class="text-center text-body-secondary">&copy; 2024 Handicraft, Inc</p>
-      </footer>
-    </div>
-    <!-- End of Page Footer Designing -->    
+    <!-- Page Footer Designing -->
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="/contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy; 2024 Handicraft, Inc</p>
+          </footer>
+        </div>
+    <!-- End of Page Footer Designing -->
 
   </body>
 </html>  

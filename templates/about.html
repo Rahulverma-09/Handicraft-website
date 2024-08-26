@@ -10,13 +10,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
+    h2{
+      margin-top: 22px;
+      margin-bottom: 40px;
+    }
+    h3{
+       margin-top: 26px;
+    }
+    #para{
+      font-family: Calibri Light;
+      line-height: 1.1px;
+      font-size: 50px;
+      font-weight: 2.3px;
+    }
+    .about-us {
+        padding: 40px;
+    }
 
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .image {
+        float: left;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .content {
+        float: right;
+        width: 70%;
+    }
     .header {
       overflow: hidden;
       background-color: #f1f1f1;
       padding: 20px 10px;
     }
-
+    
     /* Style the header links */
     .header a {
       float: left;
@@ -47,7 +82,7 @@
     }
 
     /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .header a {
         float: none;
         display: block;
@@ -56,24 +91,106 @@
       .header-right {
         float: none;
       }
+      .image {
+          float: none;
+          width: 100%;
+          margin-bottom: 20px;
+      }
+      .content {
+          float: none;
+          width: 100%;
+      }
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
+    #about-us {
+        text-align: center;
+        padding: 50px;
+    }
+
+    #about-us h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease-in-out;
+    }
+
+    #about-us p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    #about-us img {
+        width: 400px;
+        height: auto;
+        border-radius: 50%;
+        animation: rotate 3s infinite linear;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
   </style>
   </head>
 
-  <body>
+  <body style="background:url('static/pexels-karolina-grabowska-4040649.jpg'); background-repeat: none; flex: cover;">
 
 <!-- Navigation Bar Designing -->
-    <div class="header shadow-sm">
-     <span style=" font-family: forte; font-size: 36px; margin-left: 10px;"">Handicraft</span>
-      <div class="header-right">
-        <a href="/">Home</a>
-        <a href="/items">Items</a>
-        <a href="/contact">Contact</a>
-        <a class="active" href="/about">About</a>
-      </div>
-    </div>
+    <div class="header shadow-sm fixed-top bg-white">
+        <img src="static/1724665238219.png" style="width: 45px; height: 35px; margin-left: 5px; margin-top: -19px">
+        <span style="font-family: Bahnschrift SemiLight; font-size: 35.5px; margin-left: 5.5px; color: #2F4F4F;               opacity: 92%">Store</span>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="/items">Items</a>
+            <a href="/contact">Contact</a>
+            <a class="active" href="/about">About</a>
+        </div>
+    </div> 
+    <div style="height: 80px"></div>
 <!-- End of Navigation Bar Designing -->
+
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p id="para"><i>Verma Handicraft is a well known manufacturer and retailer in handicraft market, Mr. <b>Devdutt Verma</b> owns this firm which is loacted in Hathras,Uttar Pradesh. Verma Handicraft known for his manufacturing of stuunning Metal and Glass items which blends the beautiful artistry and metal work together to create a unique and beautiful handicraft item.</i></p>
+      <img src="static/1724665238219.png" alt="Photo">
+      <h3>-Thank You for visiting us-</h3>
+    </section>
+
+    <!-- Page Footer Designing -->
+        <div class="container-footer">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="/contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy; 2024 Handicraft, Inc</p>
+          </footer>
+        </div>
+    <!-- End of Page Footer Designing -->
 
 
 

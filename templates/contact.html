@@ -11,7 +11,6 @@
   </head>
   
   <style>
-
     .header {
       overflow: hidden;
       background-color: #f1f1f1;
@@ -57,22 +56,120 @@
         float: none;
       }
     }
+    .container ul li{
+      padding: 28px;
+    }
+
+    .contact{
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 70px;
+    }
+    .container-form{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    h3{
+      font-size: 27px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 350px);
+      justify-content: center;
+      overflow: hidden;
+    }
+    .grid-item {
+      padding: 20px;
+      font-size: 18.6px;
+      text-align: center;
+    }
   </style>
   
-  <body>
+<body style = "background: url('static/pexels-karolina-grabowska-4040649.jpg'); background-repeat: no-repeat;
+  flex: cover">
 <!-- Navigation Bar Designing -->
-    <div class="header shadow-sm">
-     <span style=" font-family: forte; font-size: 36px; margin-left: 10px;"">Handicraft</span>
+    <div class="header shadow-sm fixed-top bg-white">
+      <img src="static/1724665238219.png" style="width: 45px; height: 35px; margin-left: 5px; margin-top: -19px">
+       <span style="font-family: Bahnschrift SemiLight; font-size: 35.5px; margin-left: 5.5px; color: #2F4F4F;               opacity: 92%">Store</span>
       <div class="header-right">
         <a href="/">Home</a>
         <a href="/items">Items</a>
         <a class="active" href="/contact">Contact</a>
         <a href="/about">About</a>
       </div>
-    </div>
+    </div> 
+    <div style="height: 80px"></div>
 <!-- End of Navigation Bar Designing -->
 
+    <div class = "container">
+      <div class = "contact">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below and we will get back to you as soon as possible.</p>
+      </div> 
+    </div>
+  
+<!-- ADDRESSING -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="static/geo-alt-fill.svg" style="width: 33px; height: 33px">
+      <span style=""><h3><b>Address</b></h3></span>
+      <div class="para">
+        <p>Bagla Marg, Sasni Gate, Near Komal Complex, Hathras(204101), Uttar Pradesh, India.</p>
+      </div>  
+    </div>
+    
+    <div class="grid-item">
+      <img src="static/telephone-fill.svg" style="width: 33px; height: 33px">
+      <span style=""><h3><b>Phone</b></h3></span>
+      <div class="para">
+        <p>w/a - (+91) 954-896-1117<br>call - (+91) 844-990-6227</p>
+      </div>  
+    </div>
+    
+    <div class="grid-item">
+      <img src="static/envelope-fill.svg" style="width: 33px; height: 33px">
+      <span style=""><h3><b>Email</b></h3></span>
+      <div class="para">
+        <p>vermahandicraft@gmail.com</p>
+      </div>  
+    </div> 
+  </div>
+<!-- END --> 
 
+<!-- FORM -->  
+      <div class = "container-form">
+        <form action = "/contact" method = "POST">
+          <div class = "form-group">
+            <label for = "name">Name</label>
+            <input type = "text" class = "form-control" id = "name" name = "name" placeholder = "Enter your name" required>
+          </div>
+          <div class = "form-group">
+            <label for = "email">Email</label>
+            <input type = "email" class = "form-control" id = "email" name = "email" placeholder = "Enter your email" required>
+          </div>
+          <div class = "form-group">
+            <label for = "message">Message</label>
+            <textarea class = "form-control" id = "message" style = "resize: none" name = "message" placeholder = "Enter your message" rows = "5" required></textarea>
+          </div>
+          <button type = "submit" class = "btn btn-primary">Submit</button>
+        </form>
+      </div>  
+<!-- END OF FORM -->
 
+  <!-- Page Footer Designing -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">&copy; 2024 Handicraft, Inc</p>
+        </footer>
+      </div>
+  <!-- End of Page Footer Designing -->
   </body>
 </html>
